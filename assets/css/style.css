@@ -1,26 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*? Global */
 * {
 	font-family: Roboto, 'Open Sans', sans-serif;
 
 	outline: none !important;
 }
 
+/*? Color variables edition */
 :root {
 	--bs-primary: #7263FF;
+	--bs-secondary: #FFE41C;
 	--bs-gray-dark: #2a3136;
 }
 
-.bg-dark {
-	background-color: var(--bs-gray-dark) !important;
+/*? BS class addition / modification */
+.bg-dark {background-color: var(--bs-gray-dark) !important;}
+
+.bg-darker {background-color: var(--bs-dark) !important;}
+
+.text-primary {color: var(--bs-primary) !important;}
+
+.text-secondary {color: var(--bs-secondary) !important;}
+
+.bg-alpha {
+	background-color: rgba(33, 37, 41, 0.6) !important;
 }
 
-.bg-darker {
-	background-color: var(--bs-dark) !important;
+.link-white {color: var(--bs-white) !important;}
+
+.flex {display: flex;}
+
+/*? Custom style */
+main {
+	min-height: calc(100vh - (62px + 16px + 16px) - (24px + 32px + 16px));
 }
 
-nav.navbar {
-	margin-bottom: 1rem;
+h1.title {
+	display: block;
+}
+
+hr {
+	margin: 1rem 0 !important;
+
+	height: 2px !important;
+
+	opacity: .5;
+
+	background-color: var(--bs-primary) !important;
+}
+
+em {
+	color: var(--bs-secondary);
+}
+
+a:is(.text-primary, .text-secondary) {
+	transition: background-color .5s;
+}
+
+a:is(.text-primary, .text-secondary):is(:hover, :focus) {
+	background-color: rgba(80, 86, 94, 0.8);
 }
 
 nav.navbar a.navbar-brand {
@@ -56,4 +95,21 @@ nav.navbar button.navbar-toggler {
 
 nav.navbar button.navbar-toggler:is(:hover, :focus) {
 	background-color: rgba(75, 75, 75, 0.5);
+}
+
+article a {
+	position: relative;
+
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	overflow: hidden;
+
+	transition: transform .5s;
+}
+
+article a:is(:hover, :focus) {
+	transform: scale(1.025);
 }
