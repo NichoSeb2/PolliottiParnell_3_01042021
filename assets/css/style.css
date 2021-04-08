@@ -10,11 +10,17 @@
 /*? Color variables edition */
 :root {
 	--bs-primary: #7263FF;
+	--bs-primary-darker: #5c4ce9;
 	--bs-secondary: #FFE41C;
 	--bs-gray-dark: #2a3136;
+	--bs-dark: #212529;
 }
 
 /*? BS class addition / modification */
+.btn-primary {background-color: var(--bs-primary) !important;}
+
+.btn-secondary {background-color: var(--bs-secondary) !important;}
+
 .bg-dark {background-color: var(--bs-gray-dark) !important;}
 
 .bg-darker {background-color: var(--bs-dark) !important;}
@@ -23,9 +29,7 @@
 
 .text-secondary {color: var(--bs-secondary) !important;}
 
-.bg-alpha {
-	background-color: rgba(33, 37, 41, 0.6) !important;
-}
+.bg-alpha {background-color: rgba(33, 37, 41, 0.6) !important;}
 
 .link-white {color: var(--bs-white) !important;}
 
@@ -97,6 +101,10 @@ nav.navbar button.navbar-toggler:is(:hover, :focus) {
 	background-color: rgba(75, 75, 75, 0.5);
 }
 
+.show {
+	animation: nav .5s forwards;
+}
+
 article a {
 	position: relative;
 
@@ -112,4 +120,38 @@ article a {
 
 article a:is(:hover, :focus) {
 	transform: scale(1.025);
+}
+
+.btn {
+	outline: none;
+	box-shadow: none;
+	border: none;
+
+	transition: background-color .5s;
+}
+
+.btn:is(:hover, :focus) {
+	background-color: var(--bs-primary-darker) !important;
+}
+
+.form-control {
+	outline: none !important;
+	box-shadow: none !important;
+
+	border-width: 2px;
+	border-color: rgba(75, 75, 75, 0.666);
+}
+
+.form-control:is(:focus) {
+	border-color: var(--bs-secondary);
+}
+
+/* Animation */
+@keyframes nav {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
