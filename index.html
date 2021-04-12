@@ -25,194 +25,98 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="bg-dark">
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark text-center bg-darker mb-3">
-			<div class="container-fluid justify-content-center flex-column">
-				<div class="row">
-					<a class="navbar-brand" href="./index.html">
-						<img class="w-75 main-logo" src="./assets/img/main_logo.png" alt="Logo de l'association">
-					</a>
-				</div>
-				<div class="row">
-					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-						<div class="navbar-nav fs-5">
-							<a class="nav-link active" aria-current="true" href="./index.html"><i
-									class="fas fa-home"></i> Accueil</a>
-							<a class="nav-link" href="./pages/news_list.html"><i class="fas fa-newspaper"></i>
-								Actualités</a>
-							<a class="nav-link" href="./pages/movies_list.html"><i class="fas fa-film"></i> Films</a>
-							<a class="nav-link" href="./pages/about.html"><i class="fas fa-users"></i> A propos</a>
-							<a class="nav-link" href="./pages/contact.html"><i class="fas fa-address-book"></i>
-								Contact</a>
-						</div>
-					</div>
-				</div>
-				<button class="navbar-toggler p-2 fs-3" type="button" data-mdb-toggle="collapse"
-					data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<i class="fas fa-bars"></i>
-				</button>
-			</div>
+<body>
+	<header class="bg-darker flex flex-row flex-wrap">
+		<div class="col-5 d-none d-xxl-block">
+			<a href="./index.html">
+				<h1 class="text-light m-3 mt-0 mb-0">Les Films de Plein Air</h1>
+			</a>
+		</div>
+		<div class="col-12 col-xxl-2 flex justify-content-center align-content-center">
+			<a href="./index.html">
+				<img src="./assets/img/main_logo.png" alt="Logo de l'association">
+			</a>
+		</div>
+		<nav class="m-auto m-xxl-0 col-12 col-xxl-5">
+			<ul class="flex flex-column flex-xl-row justify-content-center justify-content-xxl-end text-center d-none d-xxl-flex" id="navBar">
+				<li class="fs-5"><a class="nav-link active" aria-current="true" href="./index.html"><i class="fas fa-home"></i>Accueil</a></li>
+				<li class="fs-5"><a class="nav-link" href="./pages/news_list.html"><i class="fas fa-newspaper"></i>Actualités</a></li>
+				<li class="fs-5"><a class="nav-link" href="./pages/movies_list.html"><i class="fas fa-film"></i>Films</a></li>
+				<li class="fs-5"><a class="nav-link" href="./pages/about.html"><i class="fas fa-users"></i> A propos</a></li>
+				<li class="fs-5"><a class="nav-link" href="./pages/contact.html"><i class="fas fa-address-book"></i>Contact</a></li>
+			</ul>
+			<button class="d-block d-xxl-none navbar-toggler" type="button"><i class="fas fa-bars"></i></button>
 		</nav>
 	</header>
 
-	<main class="container text-light text-center">
-		<section>
-			<div class="row">
-				<div class="col-12 col-lg-8 flex align-items-center justify-content-center flex-column">
-					<h1 class="m-2 text-center text-lg-start"><i class="fas fa-users"></i> Qui sommes-nous ?</h1>
-					<p class="m-2 fs-5">
-						<em>Les Films de Plein Air</em> est une association venant tout juste d'être créée ayant pour
-						but la projection de films d'auteurs en plein air à Paris.
-					</p>
-					<div class="row flex-row w-100 justify-content-center">
-						<a class="text-tertiary p-3 pt-2 pb-2 w-auto m-1 rounded-5 fw-bold bg-darker"
-							href="/pages/about.html">En savoir plus...</a>
-						<a class="text-tertiary p-3 pt-2 pb-2 w-auto m-1 rounded-5 fw-bold bg-darker"
-							href="/pages/contact.html">Contactez nous!</a>
-					</div>
-				</div>
-				<div class="col-12 col-lg-4">
-					<img class="w-100 rounded-5" src="/assets/img/film_festival_parc.jpg"
-						alt="Image d'une projection en plein air">
-				</div>
-			</div>
-		</section>
+	<main class="text-light text-center">
+		<div class="container-fluid p-0 hero-banner"></div>
 		<hr>
-		<section>
-			<div class="row">
-				<div class="col-12 flex align-items-center justify-content-center flex-column">
-					<h1 class="m-2 text-center text-lg-start"><i class="fas fa-newspaper"></i> Quoi de neuf ?</h1>
-				</div>
-			</div>
-			<article class="mt-2">
-				<a class="bg-darker link-white text-decoration-none p-1 rounded-5" href="/pages/news_detail.html">
-					<div class="row flex-row-reverse">
-						<div class="col-12 col-lg-8 flex align-items-center justify-content-center flex-column">
-							<h2 class="mt-2 mt-lg-0">Nous avons les dates et horaires de projection !</h2>
-							<p class="m-0 text-tertiary fw-bold">17 / 06 / 2021</p>
-							<p class="m-2 fs-5">
-								Nous vous accueillons tous les soirs du 5 au 8 août, de 18 heures à minuit.
-							</p>
-						</div>
-						<div class="col-12 col-lg-4">
-							<img class="w-100 rounded-5" src="/assets/img/projection_plein_air.jpg"
-								alt="Image d'une projection en plein air">
-						</div>
-					</div>
-				</a>
-			</article>
-			<article class="mt-2">
-				<a class="bg-darker link-white text-decoration-none p-1 rounded-5" href="/pages/news_detail.html">
-					<div class="row">
-						<div class="col-12 col-lg-8 flex align-items-center justify-content-center flex-column">
-							<h2 class="mt-2 mt-lg-0">Paris nous accueille !</h2>
-							<p class="m-0 text-tertiary fw-bold">15 / 06 / 2021</p>
-							<p class="m-2 fs-5">
-								La préfecture de Paris vient de nous donner l'autorisation de projeter dans le parc
-								Monceau.
-							</p>
-						</div>
-						<div class="col-12 col-lg-4">
-							<img class="w-100 rounded-5" src="/assets/img/parc_de_nuit.jpg"
-								alt="Image d'un parc de nuit">
-						</div>
-					</div>
-				</a>
-			</article>
-		</section>
-		<hr>
-		<section class="p-2 pt-0 pb-0">
-			<div class="row">
-				<div class="col-12 flex align-items-center justify-content-center flex-column">
-					<h1 class="m-2 text-center text-lg-start"><i class="fas fa-film"></i> Projection à venir</h1>
-				</div>
-			</div>
-			<div class="row">
-				<article class="mt-2 p-1 pt-0 pb-0 col-12 col-lg-6 col-xl-3">
-					<a class="bg-darker link-white text-decoration-none p-1 rounded-5" href="/pages/movie_detail.html">
-						<div class="column">
-							<img class="w-100 rounded-5" src="/assets/img/2001_odyssée_espace.jpg"
-								alt="Image de couverture du film 2001 l'Odyssée de l'Espace">
-							<h2 class="fs-4 mt-2 mb-0">2001 l'Odyssée de l'Espace</h2>
-							<p class="m-2 text-tertiary fw-bold">05 / 08 / 2021 à 18h</p>
-							<p>A l'aube de l'Humanité, une tribu de primates subit les assauts répétés d'une bande
-								rivale. La découverte d'un monolithe noir inspire au chef des singes assiégés un geste
-								inédit et décisif. En 2001, quatre millions d'années plus tard, un vaisseau spatial
-								évolue en orbite lunaire au rythme langoureux du "Beau Danube Bleu".</p>
-						</div>
-					</a>
+		<section class="container-fluid p-0 bg-darker">
+			<h2><i class="fas fa-newspaper"></i> Quoi de neuf ?</h2>
+			<div class="container row flex flex-row justify-content-center m-auto">
+				<article class="col-12 col-lg-8 col-xxl-4 bg-dark m-2 mb-3 mt-0 p-4 pt-0 pb-0">
+					<h3 class="m-0 mt-4 mb-4">Nous avons les dates et horaires de projection !</h3>
+					<p class="m-0 mt-2 mb-2 text-primary fw-bold">15 / 06 / 2021</p>
+					<p>Nous vous accueillons tous les soirs du 5 au 8 août, de 18 heures à minuit.</p>
 				</article>
-				<article class="mt-2 p-1 pt-0 pb-0 col-12 col-lg-6 col-xl-3">
-					<a class="bg-darker link-white text-decoration-none p-1 rounded-5" href="/pages/movie_detail.html">
-						<div class="column">
-							<img class="w-100 rounded-5" src="/assets/img/shining.jpg"
-								alt="Image de couverture du film shining">
-							<h2 class="fs-4 mt-2 mb-0">Shining</h2>
-							<p class="m-2 text-tertiary fw-bold">05 / 08 / 2021 à 22h</p>
-							<p>Jack Torrance, gardien d'un hôtel fermé l'hiver, sa femme et son fils Danny s'apprêtent à
-								vivre de longs mois de solitude. Danny, qui possède un don de médium, le "Shining", est
-								effrayé à l'idée d'habiter ce lieu, théâtre marqué par de terribles évènements passés...
-							</p>
-						</div>
-					</a>
-				</article>
-				<article class="mt-2 p-1 pt-0 pb-0 col-12 col-lg-6 col-xl-3">
-					<a class="bg-darker link-white text-decoration-none p-1 rounded-5" href="/pages/movie_detail.html">
-						<div class="column">
-							<img class="w-100 rounded-5" src="/assets/img/american_sniper.jpg"
-								alt="Image de couverture du film American Sniper">
-							<h2 class="fs-4 mt-2 mb-0">American Sniper</h2>
-							<p class="m-2 text-tertiary fw-bold">06 / 08 / 2021 à 18h</p>
-							<p>Tireur d'élite des Navy SEAL, Chris Kyle est envoyé en Irak dans un seul but : protéger
-								ses camarades. Sa précision chirurgicale sauve d'innombrables vies humaines sur le champ
-								de bataille et, tandis que les récits de ses exploits se multiplient, il décroche le
-								surnom de "La Légende"...</p>
-						</div>
-					</a>
-				</article>
-				<article class="mt-2 p-1 pt-0 pb-0 col-12 col-lg-6 col-xl-3">
-					<a class="bg-darker link-white text-decoration-none p-1 rounded-5" href="/pages/movie_detail.html">
-						<div class="column">
-							<img class="w-100 rounded-5" src="/assets/img/full_metal_jacket.jpg"
-								alt="Image de couverture du film Full metal jacket">
-							<h2 class="fs-4 mt-2 mb-0">Full Metal Jacket</h2>
-							<p class="m-2 text-tertiary fw-bold">06 / 08 / 2021 à 22h</p>
-							<p>Pendant la guerre du Vietnam, la préparation et l'entrainement d'un groupe de jeunes
-								marines, jusqu'au terrible baptême du feu et la sanglante offensive du Tet à Hue, en
-								1968.</p>
-						</div>
-					</a>
+				<article class="col-12 col-lg-8 col-xxl-4 bg-dark m-2 mb-3 mt-0 p-4 pt-0 pb-0">
+					<h3 class="m-0 mt-4 mb-4">Paris nous accueille !</h3>
+					<p class="m-0 mt-2 mb-2 text-primary fw-bold">15 / 06 / 2021</p>
+					<p>La préfecture de Paris vient de nous donner l'autorisation de projeter dans le parc Monceau.</p>
 				</article>
 			</div>
 		</section>
 		<hr>
-		<section>
-			<div class="row">
-				<div class="col-12 flex align-items-center justify-content-center flex-column">
-					<h1 class="m-2 text-center text-lg-start"><i class="fas fa-book"></i> Faire une réservation</h1>
-				</div>
+		<section class="container-fluid hero-banner">
+			<div class="container p-0 pt-lg-1 pb-lg-2 pt-0 pb-5">
+				<h2 class="p-0 pt-4 pb-4"><i class="fas fa-users"></i> Qui sommes-nous ?</h2>
+				<p class="fs-5 m-auto">
+					<em>Les Films de Plein Air</em> est une association venant tout juste d'être créée ayant pour
+					but la projection de films d'auteurs en plein air à Paris.
+				</p>
 			</div>
-			<div class="row">
-				<div class="col-12 flex align-items-center justify-content-center flex-column">
-					<h4>Nos projections sont gratuites, la réservation de place nous permet d'anticiper le
-						nombre de personnes intéréssées.<br>Elle vous permet également de vous assurer un accès à la
-						projetion dans le cas d'une forte affluance.</h4>
-				</div>
+		</section>
+		<section class="flex justify-content-center flex-column pb-5 pt-1">
+			<h2 class="text-dark mt-2 mb-2"><i class="fas fa-film"></i> Projection à venir</h2>
+			<div class="m-auto p-0 container row flex-row justify-content-center flex-lg-nowrap">
+				<article class="bg-darker col-12 col-lg-3 m-1 mt-1 mb-2 p-0">
+					<img class="w-100" src="/assets/img/2001_odyssée_espace.jpg" alt="Image de couverture du film 2001 l'Odyssée de l'Espace">
+					<h3 class="m-2">2001 l'Odyssée de l'Espace</h3>
+					<p class="m-0 mt-2 mb-2 text-primary fw-bold">05 / 08 / 2021 à 18h</p>
+				</article>
+				<article class="bg-darker col-12 col-lg-3 m-1 mt-1 mb-2 p-0">
+					<img class="w-100" src="/assets/img/shining.jpg" alt="Image de couverture du film shining">
+					<h3 class="m-2">Shining</h3>
+					<p class="m-0 mt-2 mb-2 text-primary fw-bold">05 / 08 / 2021 à 18h</p>
+				</article>
+				<article class="bg-darker col-12 col-lg-3 m-1 mt-1 mb-2 p-0">
+					<img class="w-100" src="/assets/img/american_sniper.jpg" alt="Image de couverture du film American Sniper">
+					<h3 class="m-2">American Sniper</h3>
+					<p class="m-0 mt-2 mb-2 text-primary fw-bold">05 / 08 / 2021 à 18h</p>
+				</article>
+				<article class="bg-darker col-12 col-lg-3 m-1 mt-1 mb-2 p-0">
+					<img class="w-100" src="/assets/img/full_metal_jacket.jpg" alt="Image de couverture du film Full metal jacket">
+					<h3 class="m-2">Full Metal Jacket</h3>
+					<p class="m-0 mt-2 mb-2 text-primary fw-bold">05 / 08 / 2021 à 18h</p>
+				</article>
 			</div>
-			<div class="row justify-content-center">
+		</section>
+		<section class="bg-darker">
+			<div class="container">
+				<h2><i class="fas fa-book"></i> Faire une réservation</h2>
+				<p class="fs-5 fw-bold">
+					Nos projections sont gratuites, la réservation de place nous permet d'anticiper le nombre de personnes intéréssées.<br>Elle vous permet également de vous assurer un accès à la projetion dans le cas d'une forte affluance.
+				</p>
 				<form method="POST">
 					<div class="flex form-row flex-column flex-lg-row">
 						<div class="col m-1 text-start">
 							<label for="name">Votre nom : </label>
-							<input class="form-control bg-darker text-light" type="text" id="name"
-								placeholder="John Doe">
+							<input class="form-control bg-darker text-light" type="text" id="name" placeholder="John Doe">
 						</div>
 						<div class="col m-1 text-start">
 							<label for="email">Votre adresse email : </label>
-							<input class="form-control bg-darker text-light" type="email" id="email"
-								placeholder="name@example.com">
+							<input class="form-control bg-darker text-light" type="email" id="email" placeholder="name@example.com">
 						</div>
 					</div>
 					<div class="flex form-row flex-column flex-lg-row">
@@ -227,19 +131,19 @@
 						</div>
 						<div class="col m-1 text-start">
 							<label for="nb_place">Combien de place désirez-vous : </label>
-							<input class="form-control bg-darker text-light" type="number" id="nb_place" value="1"
-								min="1">
+							<input class="form-control bg-darker text-light" type="number" id="nb_place" value="1" min="1">
 						</div>
 					</div>
 					<div class="flex form-row justify-content-center">
-						<button class="m-1 mt-3 btn btn-secondary" type="submit">Réserver vos places</button>
+						<button class="m-3 btn btn-primary" type="submit">Réserver vos places</button>
 					</div>
 				</form>
 			</div>
 		</section>
+		<hr>
 	</main>
 
-	<footer class="text-center bg-darker text-light mt-3 p-3">
+	<footer class="text-center bg-darker text-light p-3">
 		<p class="m-0">Les Films de Plein Air tous droits réservés - 2021</p>
 	</footer>
 

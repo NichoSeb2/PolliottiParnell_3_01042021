@@ -11,9 +11,8 @@
 :root {
 	--bs-primary: #F67907;
 	--bs-secondary: #FAA51C;
-	--bs-tertiary: #D12404;
-	--bs-gray-dark: #353c42;
 	--bs-dark: #24282c;
+	--header-height: 75px;
 }
 
 /*? BS class addition / modification */
@@ -29,8 +28,6 @@
 
 .text-secondary {color: var(--bs-secondary) !important;}
 
-.text-tertiary {color: var(--bs-tertiary) !important;}
-
 .bg-alpha {background-color: rgba(33, 37, 41, 0.6) !important;}
 
 .link-white {color: var(--bs-white) !important;}
@@ -41,107 +38,171 @@
 
 .rounded-5 {border-radius: .5rem !important;}
 
+em {color: var(--bs-primary);}
+
 /*? Custom style */
-h1 {
-	font-size: calc(1.4rem + 1.5vw) !important;
+header {
+	position: relative;
+
+	width: 100%;
 }
 
-main {
-	min-height: calc(100vh - (62px + 16px + 16px) - (24px + 32px + 16px));
+header a {
+	text-decoration: none;
 }
 
-h1.title {
-	display: block;
+header h1 {
+	height: 100%;
+
+	line-height: var(--header-height);
 }
 
-hr {
-	margin: 1rem 0 !important;
+header img {
+	height: var(--header-height);
 
-	height: 2px !important;
+	background-color: var(--bs-dark);
 
-	opacity: .5;
-
-	background-color: var(--bs-primary) !important;
+	border-radius: 50%;
 }
 
-em {
+header ul {
+	margin: 0;
+	padding: 0;
+
+	height: 100%;
+
+	list-style: none;
+}
+
+header ul li {
+	line-height: var(--header-height);
+}
+
+header ul li a {
+	padding: 0 !important;
+	padding-right: 18px !important;
+
+	color: white;
+}
+
+header ul li a.active {
 	color: var(--bs-primary);
 }
 
-a:is(.text-primary, .text-secondary, .text-tertiary) {
-	transition: background-color .5s;
+header ul li a.active:is(:hover, :focus) {
+	color: var(--bs-primary);
 }
 
-a:is(.text-primary, .text-secondary, .text-tertiary):is(:hover, :focus) {
-	background-color: rgba(14, 15, 19, 0.767) !important;
+header ul li a:is(:hover, :focus) {
+	color: var(--bs-secondary);
 }
 
-nav.navbar a.navbar-brand {
-	margin-right: 1.5rem;
-
-	line-height: 50px;
+header ul li a i {
+	margin-right: 3px;
 }
 
-nav.navbar div.navbar-collapse {
-	flex-grow: unset;
-}
-
-nav.navbar a.nav-link:is(:hover, :focus) {
-	color: var(--bs-secondary) !important;
-}
-
-nav.navbar a.nav-link.active {
-	color: var(--bs-primary) !important;
-
-	font-weight: bold;
-}
-
-nav.navbar a.nav-link.active:hover {
-	color: var(--bs-primary) !important;
-}
-
-nav.navbar button.navbar-toggler {
+header button.navbar-toggler {
 	position: absolute;
 
 	top: 0;
 	right: 0;
 
-	border: none;
+	margin: 5px;
 
-	color: white;
+	color: var(--bs-primary);
 
 	transition: color .5s;
+}
+
+header button.navbar-toggler:is(:hover, :focus) {
+	color: var(--bs-secondary);
 
 	box-shadow: none;
 }
 
-nav.navbar button.navbar-toggler:is(:hover, :focus) {
-	color: var(--bs-tertiary);
+main {
+	min-height: calc(100vh - (var(--header-height)) - (24px + 32px));
+
+	background-color: #F0F0F0;
 }
 
-.show {
-	animation: nav .5s forwards;
+main h2 {
+	margin: 0 !important;
+	padding: 15px 0 !important;
 }
 
-h1 i {
-	color: var(--bs-secondary);
+main h2 i {
+	color: var(--bs-primary);
 }
 
-article a {
+main hr {
+	margin: 0;
+
+	height: 40px !important;
+
+	background-color: #FFFFFF;
+
+	opacity: 1;
+}
+
+section.hero-banner {
+	z-index: 0;
+
+	background-image: url("../img/parc_de_nuit.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+section.hero-banner div.container p {
 	position: relative;
 
-	display: block;
+	z-index: 10;
+
+	max-width: 80%;
+}
+
+section.hero-banner div.container p::before {
+	content: '';
+
+	position: absolute;
+
+	top: 0;
+	left: 0;
 
 	width: 100%;
 	height: 100%;
 
-	overflow: hidden;
+	z-index: -1;
 
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+article {
 	transition: transform .5s;
 }
 
-article a:is(:hover, :focus) {
-	transform: scale(1.025);
+article:is(:hover, :focus) {
+	cursor: pointer;
+
+	transform: scale(1.02);
+}
+
+article p.text-primary {
+	transition: color .5s;
+}
+
+article:is(:hover, :focus) p.text-primary {
+	color: var(--bs-secondary) !important;
+}
+
+div.hero-banner {
+	height: 400px;
+
+	background-image: url("../img/parc_de_nuit.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .btn {
@@ -153,7 +214,7 @@ article a:is(:hover, :focus) {
 }
 
 .btn:is(:hover, :focus) {
-	background-color: var(--bs-primary) !important;
+	background-color: var(--bs-secondary) !important;
 }
 
 .form-control {
@@ -168,7 +229,11 @@ article a:is(:hover, :focus) {
 	border-color: var(--bs-secondary);
 }
 
-/* Animation */
+footer {
+	margin-top: 0 !important;
+}
+
+/*? Animation */
 @keyframes nav {
 	from {
 		opacity: 0;
