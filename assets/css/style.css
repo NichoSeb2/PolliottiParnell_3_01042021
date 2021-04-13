@@ -183,8 +183,8 @@ article:is(:hover, :focus) p.text-primary {
 div.hero-banner {
 	height: 400px;
 
-	background-image: url("../img/parc_de_nuit.jpg");
-	background-position: 50% 50%;
+	background-image: url("../img/grand_parc_de_nuit.jpg");
+	background-position: 50% 25%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
