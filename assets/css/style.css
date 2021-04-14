@@ -153,7 +153,7 @@ section.hero-banner {
 	z-index: 0;
 
 	background-image: url("../img/parc_de_nuit.jpg");
-	background-position: 50% 28%;
+	background-position: 50% 23%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -172,6 +172,16 @@ article:is(:hover, :focus) {
 	transform: scale(1.02);
 }
 
+article a {
+	text-decoration: none;
+
+	color: white;
+}
+
+article a:is(:hover, :focus) {
+	color: inherit;
+}
+
 article p.text-primary {
 	transition: color .5s;
 }
@@ -184,7 +194,7 @@ div.hero-banner {
 	height: 400px;
 
 	background-image: url("../img/grand_parc_de_nuit.jpg");
-	background-position: 50% 25%;
+	background-position: 50% 20%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
