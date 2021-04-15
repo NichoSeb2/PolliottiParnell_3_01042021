@@ -40,6 +40,16 @@
 
 em {color: var(--bs-primary);}
 
+a.link-primary {
+	color: var(--bs-primary);
+
+	transition: color .5s;
+}
+
+a.link-primary:is(:hover, :focus) {
+	color: var(--bs-secondary);
+}
+
 /*? Custom style */
 header {
 	position: relative;
@@ -238,7 +248,7 @@ footer {
 }
 
 /*? Responsive */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
 	header ul li {
 		line-height: 75px;
 	}
