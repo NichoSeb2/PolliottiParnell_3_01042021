@@ -42,6 +42,15 @@
 	white-space: nowrap;
 }
 
+.page-item.active a {
+	background-color: var(--bs-primary) !important;
+	border-color: var(--bs-primary) !important;
+}
+
+a.page-link {color: var(--bs-primary);}
+
+a.page-link:is(:hover, :focus) {color: var(--bs-secondary);}
+
 em {color: var(--bs-primary);}
 
 a.link-primary {
