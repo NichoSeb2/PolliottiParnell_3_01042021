@@ -38,6 +38,10 @@
 
 .rounded-5 {border-radius: .5rem !important;}
 
+.no-text-wrap {
+	white-space: nowrap;
+}
+
 em {color: var(--bs-primary);}
 
 a.link-primary {
@@ -233,6 +237,10 @@ div.hero-banner {
 	border-color: var(--bs-secondary);
 }
 
+aside.modal button.btn-close {
+	box-shadow: none;
+}
+
 footer {
 	margin-top: 0 !important;
 }
@@ -248,11 +256,17 @@ footer {
 }
 
 /*? Responsive */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 	header ul li {
 		line-height: 75px;
 	}
 
+	header ul li a {
+		margin: 10px;
+	}
+}
+
+@media (max-width: 1200px) {
 	header ul li a {
 		margin-right: 0;
 	}

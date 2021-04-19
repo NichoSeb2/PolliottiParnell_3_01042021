@@ -40,7 +40,66 @@
 		</nav>
 	</header>
 
-	<main class="text-light text-center"></main>
+	<main class="text-dark text-center flex justify-content-center align-content-center">
+		<section class="m-auto">
+			<div class="container">
+				<h1 class="mt-4 mt-lg-0 mb-5">A propos de nous</h1>
+				<p class="fs-5">
+					L’association "Les Films de Plein Air" vous offre la projetions de films, au parc Monceau cette année, chaque soir du 5 au 8 août, de 18 heures à minuit. Nous souhaitons vous faire découvrir des films d'auteur.
+				</p>
+				<p class="fs-5 mb-5">
+					L'accès aux projections est gratuit mais nous vous recomandons de faire une réservation affin que nous puissions estimer le nombre de personnes présentes chaque soir. Cela vous permetra également de vous assuez une place dans le cas d'une forte affluance. Si vous désirez vous inscrire il vous suffit de remplire le formulaire ci-dessous, une liste complète de nos projections a venir est disponible en suivant <a class="link-primary" href="./movies_list.html">ce lien</a>.
+				</p>
+				<form method="POST">
+					<div class="flex form-row flex-column flex-lg-row">
+						<div class="col m-1 text-start">
+							<label for="name">Votre nom : </label>
+							<input class="form-control" type="text" id="name" placeholder="John Doe" required>
+						</div>
+						<div class="col m-1 text-start">
+							<label for="email">Votre adresse email : </label>
+							<input class="form-control" type="email" id="email" placeholder="name@example.com" required>
+						</div>
+					</div>
+					<div class="flex form-row flex-column flex-lg-row">
+						<div class="col m-1 text-start">
+							<label for="projection">Choisissez une projection : </label>
+							<select class="form-control" id="projection" required>
+								<option value="1">05/08/2021 à 18h - 2001 l'odyssée de l'espace</option>
+								<option value="2">05/08/2021 à 22h - Shining</option>
+								<option value="3">06/08/2021 à 18h - American Sniper</option>
+								<option value="4">06/08/2021 à 22h - Full Metal Jacket</option>
+							</select>
+						</div>
+						<div class="col m-1 text-start">
+							<label for="nb_place">Combien de place désirez-vous : </label>
+							<input class="form-control" type="number" id="nb_place" value="1" min="1" required>
+						</div>
+					</div>
+					<div class="flex form-row justify-content-center">
+						<button class="m-3 btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#registrationModal">Réserver vos places</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<aside id="registrationModal" class="modal" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Félicitation</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Votre réservation a bien été enregistrer.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+				</div>
+			</div>
+		</div>
+	</aside>
 
 	<footer class="text-center bg-darker text-light p-3">
 		<p class="m-0">Les Films de Plein Air tous droits réservés - 2021</p>
