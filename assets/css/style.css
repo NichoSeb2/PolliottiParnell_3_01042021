@@ -47,7 +47,11 @@
 	border-color: var(--bs-primary) !important;
 }
 
-a.page-link {color: var(--bs-primary);}
+a.page-link {
+	color: var(--bs-primary);
+
+	box-shadow: none !important;
+}
 
 a.page-link:is(:hover, :focus) {color: var(--bs-secondary);}
 
