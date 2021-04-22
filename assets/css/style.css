@@ -24,6 +24,8 @@
 
 .bg-darker {background-color: var(--bs-dark) !important;}
 
+.text-justify {text-align: justify;}
+
 .text-primary {color: var(--bs-primary) !important;}
 
 .text-secondary {color: var(--bs-secondary) !important;}
@@ -65,6 +67,13 @@ a.link-primary {
 
 a.link-primary:is(:hover, :focus) {
 	color: var(--bs-secondary);
+}
+
+span.vertical-separator {
+	display: block;
+
+	width: 1px;
+	height: 80%;
 }
 
 /*? Custom style */
