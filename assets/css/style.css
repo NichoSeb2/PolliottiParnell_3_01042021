@@ -166,6 +166,13 @@ main {
 	background-color: #F0F0F0;
 }
 
+main.hero-banner {
+	background-image: url("../img/night_parc.jpg");
+	background-position: 50% 75%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 main h2 {
 	margin: 0 !important;
 	padding: 15px 0 !important;
