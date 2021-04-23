@@ -270,6 +270,8 @@ aside.modal button.btn-close {
 	box-shadow: none;
 }
 
+iframe {border: none;}
+
 footer {
 	margin-top: 0 !important;
 }
