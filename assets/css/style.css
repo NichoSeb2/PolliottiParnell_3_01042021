@@ -79,7 +79,8 @@ a.page-link {
 	box-shadow: none !important;
 }
 
-a.page-link:is(:hover, :focus) {
+a.page-link:hover,
+a.page-link:focus {
 	color: var(--bs-secondary);
 }
 
@@ -93,7 +94,8 @@ a.link-primary {
 	transition: color 0.5s;
 }
 
-a.link-primary:is(:hover, :focus) {
+a.link-primary:hover,
+a.link-primary:focus {
 	color: var(--bs-secondary);
 }
 
@@ -155,11 +157,13 @@ header ul li a.active {
 	color: var(--bs-primary);
 }
 
-header ul li a.active:is(:hover, :focus) {
+header ul li a.active:hover,
+header ul li a.active:focus {
 	color: var(--bs-primary);
 }
 
-header ul li a:is(:hover, :focus) {
+header ul li a:hover,
+header ul li a:focus {
 	color: var(--bs-secondary);
 }
 
@@ -182,7 +186,8 @@ header button.navbar-toggler {
 	transition: color 0.5s;
 }
 
-header button.navbar-toggler:is(:hover, :focus) {
+header button.navbar-toggler:hover,
+header button.navbar-toggler:focus {
 	color: var(--bs-secondary);
 
 	box-shadow: none;
@@ -237,7 +242,8 @@ article {
 	transition: transform 0.5s;
 }
 
-article:is(:hover, :focus) {
+article:hover,
+article:focus {
 	cursor: pointer;
 
 	transform: scale(1.02);
@@ -249,7 +255,8 @@ article a {
 	color: white;
 }
 
-article a:is(:hover, :focus) {
+article a:hover,
+article a:focus {
 	color: inherit;
 }
 
@@ -257,7 +264,8 @@ article p.text-primary {
 	transition: color 0.5s;
 }
 
-article:is(:hover, :focus) p.text-primary {
+article:hover p.text-primary,
+article:focus p.text-primary {
 	color: var(--bs-secondary) !important;
 }
 
@@ -278,7 +286,8 @@ div.hero-banner {
 	transition: background-color 0.5s;
 }
 
-.btn:is(:hover, :focus) {
+.btn:hover,
+.btn:focus {
 	background-color: var(--bs-secondary) !important;
 }
 
@@ -290,7 +299,7 @@ div.hero-banner {
 	border-color: rgba(75, 75, 75, 0.666);
 }
 
-.form-control:is(:focus) {
+.form-control:focus {
 	border-color: var(--bs-secondary);
 }
 
