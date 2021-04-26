@@ -1,44 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /*? Global */
 * {
-	font-family: Roboto, 'Open Sans', sans-serif;
+	font-family: Roboto, "Open Sans", sans-serif;
 
 	outline: none !important;
 }
 
 /*? Color variables edition */
 :root {
-	--bs-primary: #F67907;
-	--bs-secondary: #FAA51C;
+	--bs-primary: #f67907;
+	--bs-secondary: #faa51c;
 	--bs-dark: #24282c;
 	--header-height: 150px;
 }
 
 /*? BS class addition / modification */
-.btn-primary {background-color: var(--bs-primary) !important;}
+.btn-primary {
+	background-color: var(--bs-primary) !important;
+}
 
-.btn-secondary {background-color: var(--bs-secondary) !important;}
+.btn-secondary {
+	background-color: var(--bs-secondary) !important;
+}
 
-.bg-dark {background-color: var(--bs-gray-dark) !important;}
+.bg-dark {
+	background-color: var(--bs-gray-dark) !important;
+}
 
-.bg-darker {background-color: var(--bs-dark) !important;}
+.bg-darker {
+	background-color: var(--bs-dark) !important;
+}
 
-.text-justify {text-align: justify;}
+.text-justify {
+	text-align: justify;
+}
 
-.text-primary {color: var(--bs-primary) !important;}
+.text-primary {
+	color: var(--bs-primary) !important;
+}
 
-.text-secondary {color: var(--bs-secondary) !important;}
+.text-secondary {
+	color: var(--bs-secondary) !important;
+}
 
-.bg-alpha {background-color: rgba(0, 0, 0, 0.6) !important;}
+.bg-alpha {
+	background-color: rgba(0, 0, 0, 0.6) !important;
+}
 
-.link-white {color: var(--bs-white) !important;}
+.link-white {
+	color: var(--bs-white) !important;
+}
 
-.flex {display: flex;}
+.flex {
+	display: flex;
+}
 
-.rounded-4 {border-radius: .4rem !important;}
+.rounded-4 {
+	border-radius: 0.4rem !important;
+}
 
-.rounded-5 {border-radius: .5rem !important;}
+.rounded-5 {
+	border-radius: 0.5rem !important;
+}
 
 .no-text-wrap {
 	white-space: nowrap;
@@ -55,14 +79,18 @@ a.page-link {
 	box-shadow: none !important;
 }
 
-a.page-link:is(:hover, :focus) {color: var(--bs-secondary);}
+a.page-link:is(:hover, :focus) {
+	color: var(--bs-secondary);
+}
 
-em {color: var(--bs-primary);}
+em {
+	color: var(--bs-primary);
+}
 
 a.link-primary {
 	color: var(--bs-primary);
 
-	transition: color .5s;
+	transition: color 0.5s;
 }
 
 a.link-primary:is(:hover, :focus) {
@@ -120,7 +148,7 @@ header ul li a {
 
 	color: white;
 
-	transition: color .5s;
+	transition: color 0.5s;
 }
 
 header ul li a.active {
@@ -151,7 +179,7 @@ header button.navbar-toggler {
 
 	color: var(--bs-primary);
 
-	transition: color .5s;
+	transition: color 0.5s;
 }
 
 header button.navbar-toggler:is(:hover, :focus) {
@@ -163,7 +191,7 @@ header button.navbar-toggler:is(:hover, :focus) {
 main {
 	min-height: calc(100vh - (var(--header-height)) - (24px + 32px));
 
-	background-color: #F0F0F0;
+	background-color: #f0f0f0;
 }
 
 main.hero-banner {
@@ -187,7 +215,7 @@ main hr {
 
 	height: 40px !important;
 
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 
 	opacity: 1;
 }
@@ -206,7 +234,7 @@ section.hero-banner div.container p {
 }
 
 article {
-	transition: transform .5s;
+	transition: transform 0.5s;
 }
 
 article:is(:hover, :focus) {
@@ -226,7 +254,7 @@ article a:is(:hover, :focus) {
 }
 
 article p.text-primary {
-	transition: color .5s;
+	transition: color 0.5s;
 }
 
 article:is(:hover, :focus) p.text-primary {
@@ -247,7 +275,7 @@ div.hero-banner {
 	box-shadow: none !important;
 	border: none !important;
 
-	transition: background-color .5s;
+	transition: background-color 0.5s;
 }
 
 .btn:is(:hover, :focus) {
@@ -270,7 +298,9 @@ aside.modal button.btn-close {
 	box-shadow: none;
 }
 
-iframe {border: none;}
+iframe {
+	border: none;
+}
 
 footer {
 	margin-top: 0 !important;
